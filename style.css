@@ -1,29 +1,61 @@
 body {
+  margin: 0;
+}
+.container {
+  margin: 0;
   font-family: "Courier New", Courier, monospace;
   color: #025a6e;
   background-color: #d8f0f2;
-  min-height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
   line-height: 100%;
 }
 header {
   display: flex;
   align-items: center;
   flex-direction: column;
-  /* border: 5px solid greenyellow; */
+  padding: 2px;
 }
 .foto img {
   border-radius: 50%;
   width: 10em;
   height: 10em;
+  margin: 10px;
 }
 section {
   display: flex;
   flex-direction: column;
-  /* border: 5px solid greenyellow; */
+  justify-content: center;
   align-items: center;
+}
+h1 {
+  margin: 0;
+}
+.about-me {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.social-media {
+  display: flex;
+  width: 20em;
+  justify-content: space-evenly;
+}
+.social-media-content {
+  justify-content: center;
+  align-items: center;
+  fill: #025a6e;
+}
+a {
+  color: #025a6e;
+}
+.special-logo {
+  display: flex;
+  border: 5px solid;
+  width: 10em;
+  justify-content: space-evenly;
+}
+.special-logo-content {
+  border: 5px solid;
 }
 .box {
   display: flex;
@@ -34,7 +66,6 @@ section {
   background-color: antiquewhite;
   box-shadow: 2px 2px 6px;
   border-radius: 5px;
-  /* border: 5px solid green; */
 }
 .judul {
   display: flex;
@@ -42,20 +73,60 @@ section {
   margin: 2px;
   justify-content: center;
   width: 30vw;
-  /* border: 5px solid blue; */
 }
 .isi {
-  /* margin: 10px; */
   padding: 5px;
   width: 75vw;
-  /* border: 5px solid blue; */
+  box-sizing: border-box;
+}
+.portfolio{
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-between;
+}
+.isi img{
+  width: 10em;
+  height: 10em;
+  border-radius: 5px;
+  flex-direction: column;
+  margin: 5px;
 }
 footer {
   background-color: #025a6e;
   color: antiquewhite;
   display: flex;
   justify-content: center;
-  align-items: center;
-  padding: 5px;
-  /* margin-top: auto; */
+  margin-top: 30px;
+}
+input[type=text], select {
+  width: 95%;
+  padding: 5px 10px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 2px solid #025a6e;
+  border-radius: 4px;
+  box-sizing: border-box;
+  background-color: #f8f8f8;
+}
+textarea {
+  width: 95%;
+  height: 120px;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: 2px solid #025a6e;
+  border-radius: 4px;
+  background-color: #f8f8f8;
+  resize: none;
+}
+input[type=submit] {
+  background-color: #025a6e;
+  color: #d8f0f2;
+  padding: 10px 20px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+input[type=submit]:hover {
+  background-color: chocolate;
 }
